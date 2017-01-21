@@ -8,8 +8,8 @@ public class DetectConnection : MonoBehaviour {
     public GameObject testObject;
     bool connected = false;
     public Color sourceColor;
-    public Light someLight;
-    public enum Sides { Left, Right, Above, Below };
+    public enum Sides {None,Left, Right, Above, Below };
+
     public Sides side;
     bool isLit = false;
     
@@ -23,7 +23,7 @@ public class DetectConnection : MonoBehaviour {
 	void Update () {
         if(connected)
         {
-            testObject.transform.Rotate(new Vector3(0, 0, 5));
+            
         }
         else
         {
@@ -38,9 +38,11 @@ public class DetectConnection : MonoBehaviour {
         {
             //if so, take the color of the other connecter if it's lit. 
             connected = true;
-            if(collider.gameObject.GetComponent<LightManager>().isComingFromSource)
+            if(collider.gameObject.GetComponent<LightManager>().isComingFromSource && !gameObject.GetComponent<LightManager>().isSource)
             {
                 gameObject.GetComponent<LightManager>().isComingFromSource = true;
+                gameObject.GetComponentInParent<LightManager>().sourceSide = (LightManager.Sides)side;
+                sourceColor = collider.GetComponent<DetectConnection>().sourceColor;
             }
 
         }
