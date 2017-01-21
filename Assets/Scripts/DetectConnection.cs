@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DetectConnection : MonoBehaviour {
 
     public GameObject testObject;
     bool connected = false;
+    public Color sourceColor;
+    public Light someLight;
+    public enum Sides { Left, Right, Above, Below };
+    public Sides side;
+    bool isLit = false;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -18,14 +25,24 @@ public class DetectConnection : MonoBehaviour {
         {
             testObject.transform.Rotate(new Vector3(0, 0, 5));
         }
-		
+        else
+        {
+           
+        }
 	}
 
+    //Checks to see if is touching another connector.
     void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Connector")
         {
+            //if so, take the color of the other connecter if it's lit. 
             connected = true;
+            if(collider.gameObject.GetComponent<LightManager>().isComingFromSource)
+            {
+                gameObject.GetComponent<LightManager>().isComingFromSource = true;
+            }
+
         }
         
     }
@@ -35,6 +52,7 @@ public class DetectConnection : MonoBehaviour {
         if (collider.gameObject.tag == "Connector")
         {
             connected = false;
+
         }
     }
 }
