@@ -14,22 +14,27 @@ public class DetectConnection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        while(connected)
+        if(connected)
         {
-            testObject.transform.Rotate(new Vector3(0, 0, 45));
+            testObject.transform.Rotate(new Vector3(0, 0, 5));
         }
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerStay2D(Collider2D collider)
     {
-        Debug.Log("Boop");
-        connected = true;
+        if (collider.gameObject.tag == "Connector")
+        {
+            connected = true;
+        }
         
     }
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        connected = false;
+        if (collider.gameObject.tag == "Connector")
+        {
+            connected = false;
+        }
     }
 }

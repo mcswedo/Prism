@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 4917030688703696}
   - component: {fileID: 61604524261185852}
   - component: {fileID: 50709058231627926}
+  - component: {fileID: 114850985540095898}
   m_Layer: 0
   m_Name: Connector 1
   m_TagString: Untagged
@@ -133,6 +134,7 @@ GameObject:
   - component: {fileID: 4247443329776016}
   - component: {fileID: 61749748235912622}
   - component: {fileID: 50892474131393400}
+  - component: {fileID: 114786423414149758}
   m_Layer: 0
   m_Name: Connector 2
   m_TagString: Untagged
@@ -481,6 +483,30 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114786423414149758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736811457479742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
+--- !u!114 &114850985540095898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1597156548992444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
 --- !u!212 &212184087772158816
 SpriteRenderer:
   m_ObjectHideFlags: 1
