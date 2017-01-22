@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4812329162412808}
   - component: {fileID: 212109476656757578}
+  - component: {fileID: 114368711851977488}
   m_Layer: 0
   m_Name: SourceObject
   m_TagString: Untagged
@@ -65,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222753518052342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.55, y: 6.934601, z: 0}
+  m_LocalPosition: {x: -7.05, y: -4.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4251880755786688}
@@ -106,6 +107,29 @@ BoxCollider2D:
   m_Offset: {x: -0.00000012665988, y: -0.06066114}
   serializedVersion: 2
   m_Size: {x: 0.39959112, y: 1.0184476}
+--- !u!114 &114368711851977488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222753518052342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 0}
+  rightLight: {fileID: 0}
+  centerLight: {fileID: 0}
+  aboveLight: {fileID: 0}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 0
+  isComingFromSource: 1
+  isSource: 1
+  sColor: 1
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!114 &114899421859590974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,7 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
-  Block: 0
   side: 0
 --- !u!212 &212109476656757578
 SpriteRenderer:

@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4075321574685640}
   - component: {fileID: 212622133170156440}
+  - component: {fileID: 114239243102600562}
   m_Layer: 0
   m_Name: Static T
   m_TagString: Untagged
@@ -271,7 +272,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956714491755332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.88, y: 6.9, z: 0}
+  m_LocalPosition: {x: 2.72, y: 3.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4463188150194618}
@@ -643,6 +644,29 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114239243102600562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956714491755332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 1519035642335090}
+  rightLight: {fileID: 1054155522372532}
+  centerLight: {fileID: 1375737651404004}
+  aboveLight: {fileID: 1375634525389142}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 0
+  isComingFromSource: 0
+  isSource: 0
+  sColor: 0
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!114 &114700822196012160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -656,7 +680,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
-  someLight: {fileID: 0}
   side: 0
 --- !u!114 &114843679679677238
 MonoBehaviour:
@@ -671,7 +694,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
-  someLight: {fileID: 0}
   side: 1
 --- !u!114 &114991866589088138
 MonoBehaviour:
@@ -686,7 +708,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
-  someLight: {fileID: 0}
   side: 2
 --- !u!212 &212077089820266292
 SpriteRenderer:

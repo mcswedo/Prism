@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 114753452398162616}
   m_Layer: 0
   m_Name: Connector 3
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 114468320692241584}
   m_Layer: 0
   m_Name: Connector 2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 114557129628515066}
   m_Layer: 0
   m_Name: Connector 1
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 212364801296043170}
   - component: {fileID: 65542908018897090}
   - component: {fileID: 114425779222448898}
+  - component: {fileID: 114916761049873662}
   m_Layer: 0
   m_Name: Moveable T
   m_TagString: Untagged
@@ -359,7 +360,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850204397188678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -2, z: 0}
+  m_LocalPosition: {x: -11.33, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4035141030614756}
@@ -672,6 +673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114425779222448898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,6 +698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114557129628515066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -707,6 +712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114651553613078490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -719,6 +726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114753452398162616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -731,6 +740,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
+--- !u!114 &114916761049873662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850204397188678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 1721357506614456}
+  rightLight: {fileID: 1063906155219630}
+  centerLight: {fileID: 1687005169328526}
+  aboveLight: {fileID: 1919175941018222}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 0
+  isComingFromSource: 0
+  isSource: 0
+  sColor: 0
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!114 &114971018107964666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -743,6 +777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!212 &212035900374997470
 SpriteRenderer:
   m_ObjectHideFlags: 1
