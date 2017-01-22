@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 55d9b9f708c29e646a96db3d7d14ce8e
+timeCreated: 1485049181
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Adam
+  fontNames:
+  - Adam
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
