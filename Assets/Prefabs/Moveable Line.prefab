@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 212153268557069796}
   - component: {fileID: 61584370113122450}
   - component: {fileID: 114058014707607264}
+  - component: {fileID: 114180483654704536}
   m_Layer: 0
   m_Name: Moveable Line
   m_TagString: Untagged
@@ -90,7 +91,7 @@ GameObject:
   - component: {fileID: 114523423507002810}
   m_Layer: 0
   m_Name: Connector 2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +124,7 @@ GameObject:
   - component: {fileID: 114484020702565394}
   m_Layer: 0
   m_Name: Connector 1
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -510,6 +511,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f78923dc551ef4a9fc1b7afe509f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114180483654704536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219312922400500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 1033662990770332}
+  rightLight: {fileID: 1898125012522940}
+  centerLight: {fileID: 1854467180027712}
+  aboveLight: {fileID: 0}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 2
+  isComingFromSource: 0
+  isSource: 0
+  sColor: 0
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!114 &114484020702565394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -522,6 +546,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114523423507002810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,6 +560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!212 &212051401793484732
 SpriteRenderer:
   m_ObjectHideFlags: 1
