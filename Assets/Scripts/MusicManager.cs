@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour 
 {
-
+	public AudioClip SFX_click;
 	public AudioClip MUS_menu;
+	public AudioSource sfxSource;
 
 	public static MusicManager Instance
 	{
@@ -39,5 +40,11 @@ public class MusicManager : MonoBehaviour
 			aSource.clip = MUS_menu;
 			aSource.Play();
 		}	
+	}
+
+	public void PlaySFX(string sfx)
+	{
+		if (sfx == "click")
+			sfxSource.PlayOneShot(SFX_click);
 	}
 }

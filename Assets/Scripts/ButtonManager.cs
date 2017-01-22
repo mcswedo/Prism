@@ -22,6 +22,10 @@ public class ButtonManager : MonoBehaviour {
 
 	public void LoadScene(int sceneToLoad)
 	{
+		if(SceneManager.GetActiveScene().name != "Splash")
+		{
+			MusicManager.Instance.PlaySFX("click");
+		}
 		SceneManager.LoadScene(sceneToLoad);
 	}
 
