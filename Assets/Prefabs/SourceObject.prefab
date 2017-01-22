@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1222753518052342
 GameObject:
   m_ObjectHideFlags: 0
@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4812329162412808}
   - component: {fileID: 212109476656757578}
-  - component: {fileID: 114368711851977488}
+  - component: {fileID: 114635235746982830}
   m_Layer: 0
   m_Name: SourceObject
   m_TagString: Untagged
@@ -65,14 +65,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222753518052342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.05, y: -4.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.92, y: -7.9974575, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4251880755786688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!50 &50451702150916308
 Rigidbody2D:
   serializedVersion: 4
@@ -90,7 +90,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!61 &61304651811197322
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_Offset: {x: -0.00000012665988, y: -0.06066114}
   serializedVersion: 2
   m_Size: {x: 0.39959112, y: 1.0184476}
---- !u!114 &114368711851977488
+--- !u!114 &114635235746982830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,21 +115,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1222753518052342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 989ad5386f1d4e64f81698d509dcb8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftLight: {fileID: 0}
-  rightLight: {fileID: 0}
-  centerLight: {fileID: 0}
-  aboveLight: {fileID: 0}
-  belowLight: {fileID: 0}
-  sourceSide: 0
-  Block: 0
-  isComingFromSource: 1
-  isSource: 1
-  sColor: 1
-  colorSource: {r: 0, g: 0, b: 0, a: 0}
-  areLightsEnabled: 0
+  shootRaycast: 1
+  direction: {x: 1, y: 0}
+  redActive: 0
+  blueActive: 1
+  greenActive: 0
 --- !u!114 &114899421859590974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,7 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 0
 --- !u!212 &212109476656757578
