@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Pipe
   - Connector
-  - Blank
-  - Light
   layers:
   - Default
   - TransparentFX
@@ -17,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - Light
-  - Turn
+  - 
+  - 
   - 
   - 
   - 
