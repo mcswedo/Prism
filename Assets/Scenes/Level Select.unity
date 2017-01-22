@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 739568648}
   - component: {fileID: 739568650}
   - component: {fileID: 739568649}
+  - component: {fileID: 739568651}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -633,6 +634,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 739568647}
+--- !u!114 &739568651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739568647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212814d50ebeb46dea3b8efd4c3e81eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925127488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,13 +1510,13 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: a030d9990c71b6f45af4a394b9dcccc1,
       type: 3}
     m_PressedSprite: {fileID: 21300000, guid: a030d9990c71b6f45af4a394b9dcccc1, type: 3}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: 7d0c1b188dd30ff4b9e22d792e0e6243, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2136367158}
   m_OnClick:
     m_PersistentCalls:
