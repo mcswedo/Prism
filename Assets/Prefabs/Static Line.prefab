@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 114850985540095898}
   m_Layer: 0
   m_Name: Connector 1
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 114786423414149758}
   m_Layer: 0
   m_Name: Connector 2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,6 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4820436016538818}
   - component: {fileID: 212835514805990484}
+  - component: {fileID: 114386335233928354}
   m_Layer: 0
   m_Name: Static Line
   m_TagString: Untagged
@@ -483,6 +484,29 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114386335233928354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997676630814342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 1142236346375970}
+  rightLight: {fileID: 1032583234961934}
+  centerLight: {fileID: 1710315753023470}
+  aboveLight: {fileID: 0}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 2
+  isComingFromSource: 0
+  isSource: 0
+  sColor: 0
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!114 &114786423414149758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,6 +519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114850985540095898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,6 +533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!212 &212184087772158816
 SpriteRenderer:
   m_ObjectHideFlags: 1

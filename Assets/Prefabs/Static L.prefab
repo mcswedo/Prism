@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114027843781836682}
   m_Layer: 0
   m_Name: Connector 2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 114386630820941474}
   m_Layer: 0
   m_Name: Connector 1
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,6 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4461429096123642}
   - component: {fileID: 212272230602937744}
+  - component: {fileID: 114700273722990068}
   m_Layer: 0
   m_Name: Static L
   m_TagString: Pipe
@@ -495,6 +496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
 --- !u!114 &114386630820941474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,6 +510,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testObject: {fileID: 0}
+  sourceColor: {r: 0, g: 0, b: 0, a: 0}
+  side: 0
+--- !u!114 &114700273722990068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651819004681232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23682200e137ef947ac35db3e53ffc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftLight: {fileID: 1924663413785556}
+  rightLight: {fileID: 0}
+  centerLight: {fileID: 1529340840049188}
+  aboveLight: {fileID: 1928333441960086}
+  belowLight: {fileID: 0}
+  sourceSide: 0
+  Block: 1
+  isComingFromSource: 0
+  isSource: 0
+  sColor: 0
+  colorSource: {r: 0, g: 0, b: 0, a: 0}
+  areLightsEnabled: 0
 --- !u!212 &212272230602937744
 SpriteRenderer:
   m_ObjectHideFlags: 1
