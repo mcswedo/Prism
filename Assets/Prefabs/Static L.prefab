@@ -267,8 +267,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651819004681232}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 3.4731684, y: -3.3282626, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 3.4731684, y: 2.6717374, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4804498743619298}
@@ -276,7 +276,7 @@ Transform:
   - {fileID: 4387414997113932}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!4 &4700162103694418
 Transform:
   m_ObjectHideFlags: 1
@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 4
 --- !u!114 &114063456922494796
@@ -521,7 +522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1430454341566292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8bee810658477a4685b24c38c896e14, type: 3}
+  m_Script: {fileID: 11500000, guid: 3735107e2bef8f943b081c3eac503fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activate: 0
@@ -530,7 +531,7 @@ MonoBehaviour:
   blueActive: 0
   lights:
   - {fileID: 1529340840049188}
-  - {fileID: 1529340840049188}
+  - {fileID: 1924663413785556}
   - {fileID: 1928333441960086}
   - {fileID: 0}
   - {fileID: 0}
@@ -545,6 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 2
 --- !u!114 &114494253691488278
@@ -559,7 +561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootRaycast: 0
-  direction: {x: 1, y: 0}
   redActive: 0
   blueActive: 0
   greenActive: 0

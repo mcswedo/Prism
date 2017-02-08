@@ -16,18 +16,18 @@ public class BunnyLight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        gameObject.GetComponentInChildren<Light>().color = endNode.GetComponentInChildren<Light>().color;
-        if(endNode.GetComponent<LightManager>().redFound && !redApplied)
+        //gameObject.GetComponentInChildren<Light>().color = endNode.GetComponentInChildren<Light>().color;
+        if(endNode.GetComponent<LightActivator>().redActive && !redApplied)
         {
             intensity++;
             redApplied = true;
         }
-        if (endNode.GetComponent<LightManager>().greenFound && !greenApplied)
+        if (endNode.GetComponent<LightActivator>().greenActive && !greenApplied)
         {
             intensity++;
             greenApplied = true;
         }
-        if (endNode.GetComponent<LightManager>().blueFound && !blueApplied)
+        if (endNode.GetComponent<LightActivator>().blueActive && !blueApplied)
         {
             intensity++;
             blueApplied = true;

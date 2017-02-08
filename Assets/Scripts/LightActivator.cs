@@ -19,34 +19,37 @@ public class LightActivator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        if (redActive && blueActive && greenActive)
-        {
-            activeColor =Colors.white;
-        }
-        else if (redActive && blueActive)
-        {
-            activeColor = Colors.magenta;
-        }
-        else if (redActive && greenActive)
-        {
-            activeColor = Colors.yellow;
-        }
-        else if (greenActive && blueActive)
-        {
-            activeColor = Colors.cyan;
-        }
-        else if (greenActive)
-        {
-            activeColor = Colors.green;
-        }
-        else if (blueActive)
-        {
-            activeColor = Colors.blue;
-        }
-        else if (redActive)
+        if (redActive)
         {
            activeColor = Colors.red;
         }
+        if (blueActive)
+        {
+            activeColor = Colors.blue;
+        }
+        if (greenActive)
+        {
+            activeColor = Colors.green;
+        }
+        
+        if (redActive && blueActive)
+        {
+            activeColor = Colors.magenta;
+        }
+        if (redActive && greenActive)
+        {
+            activeColor = Colors.yellow;
+        }
+        if (greenActive && blueActive)
+        {
+            activeColor = Colors.cyan;
+        }
+        if (redActive && blueActive && greenActive)
+        {
+            activeColor = Colors.white;
+        }
+        
+        
 
 
         for(int i = 0; i < lights.Length; i++)

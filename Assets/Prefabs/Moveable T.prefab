@@ -748,7 +748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141494781736892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8bee810658477a4685b24c38c896e14, type: 3}
+  m_Script: {fileID: 11500000, guid: 3735107e2bef8f943b081c3eac503fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activate: 0
@@ -756,10 +756,10 @@ MonoBehaviour:
   greenActive: 0
   blueActive: 0
   lights:
-  - {fileID: 1687005169328526}
-  - {fileID: 1919175941018222}
-  - {fileID: 1919175941018222}
   - {fileID: 1721357506614456}
+  - {fileID: 1063906155219630}
+  - {fileID: 1919175941018222}
+  - {fileID: 1687005169328526}
   - {fileID: 0}
 --- !u!114 &114380260300238172
 MonoBehaviour:
@@ -772,6 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 1
 --- !u!114 &114425779222448898
@@ -796,6 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 4
 --- !u!114 &114695590382345398
@@ -809,6 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 3
 --- !u!114 &114756283627764780
@@ -823,7 +826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootRaycast: 0
-  direction: {x: 1, y: 0}
   redActive: 0
   blueActive: 0
   greenActive: 0
@@ -838,6 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3722c3664e45ae44a89c78ec1dbe7db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
   sourceColor: {r: 0, g: 0, b: 0, a: 0}
   side: 2
 --- !u!212 &212035900374997470
@@ -941,7 +944,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 33f669c177061b446b4e5e1f65dac7ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e58ce6d7117642649aec59b187278642, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

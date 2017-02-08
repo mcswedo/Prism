@@ -134,7 +134,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4820436016538818}
   - component: {fileID: 212835514805990484}
-  m_Layer: 0
+  - component: {fileID: 61667690773427014}
+  - component: {fileID: 61311609256422466}
+  m_Layer: 8
   m_Name: Static Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +268,34 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &61311609256422466
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997676630814342}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.603438}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.17829156}
+--- !u!61 &61667690773427014
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997676630814342}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.58}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.17829156}
 --- !u!108 &108151261573062958
 Light:
   m_ObjectHideFlags: 1
@@ -376,7 +406,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1925702107133206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8bee810658477a4685b24c38c896e14, type: 3}
+  m_Script: {fileID: 11500000, guid: 3735107e2bef8f943b081c3eac503fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activate: 0
@@ -401,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootRaycast: 0
-  direction: {x: 1, y: 0}
   redActive: 0
   blueActive: 0
   greenActive: 0
