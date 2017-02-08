@@ -17,5 +17,5 @@ public class Colors {
     public static Color cyan = new Color(0.58f, 0.923f, 1, 1);
     public static Color magenta = new Color(0.91f, 0.58f, 1, 1);
     public static Color yellow = new Color(0.98f, 1, 0.58f, 1);
-	public static Color white = new Color(1f, 1f, 1f, 1);
+    public static Color white = new Color(1, 1, 1, 1);
 }
