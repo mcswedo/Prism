@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pipe
   - Connector
+  - Pipe
+  - Blank
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Light
   - 
   - 
   - 
